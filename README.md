@@ -1,2 +1,1 @@
-# letsupgrade-javaessential
-day 2 assignment
+# letsupgrade-javaessential assignment
