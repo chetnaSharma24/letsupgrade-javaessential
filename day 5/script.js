@@ -8,10 +8,8 @@ for (var i = 0; i < a; i++) {
     arr[i] = i;
 }
 console.log(arr);
-let odd=arr.filter(el=>el%2!=0);
-{ return el**3;
+let odd=arr.filter(el=>el%2!=0).map(el=>el**3);
 
-}
 console.log(odd);
 
 
@@ -20,7 +18,7 @@ class user{
         this.name=name;
         this.age=age;
         this.email=email;
-        this.lucoins=lucoins;
+        this.lucoins=0;
     }
     login(){
         console.log(`${this.name} has logged in`);
@@ -34,22 +32,13 @@ class user{
         console.log(`${this.name} has ${this.lucoins} coins`)
     }
 }
-let user1=new user('dilip',25,'dilip@gmail.com');
 
-let user2=new user('dilip',25,'dilip@gmail.com');
-let mod=new moderator('dilip',25,'dilip@gmail.com','moderator');
-let admin=new admin('dilip',25,'dilip@gmail.com');
 
-user1.login();
-let users=[user1,user2,mod,admin];
 class moderator extends user{
-    constructor(name,age,email,role){
-        super(name,age,email);
-        this.role=role;
-    }
-    deleteuser(user){
+    
+    deleteuser(userr){
         users=users.filter(u=>{
-            return u.email != user.email;
+            return u.email != userr.email;
         })
     }
 }
@@ -59,3 +48,14 @@ class admin extends moderator{
         console.log(user);
     }
 }
+let user1=new user('dip',25,'dip@gmail.com');
+
+let user2=new user('di',25,'d@gmail.com');
+
+
+user1.login();
+let mod=new moderator('a',25,'lip@gmail.com','moderator');
+let admi=new admin('b',25,'dsp@gmail.com');
+let users=[user1,user2,mod,admi];
+admi.login();
+mod.deleteuser(user1);
