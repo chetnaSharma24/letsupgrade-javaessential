@@ -8,7 +8,7 @@ console.log(`The OS name is ${s[0]} and version is ${s[1]}`);
 
 
 let grade=prompt("enter your marks you got in english");
-/*
+//usong if
  if(grade>90)
 console.log("A");
 else if(grade>80)
@@ -16,7 +16,7 @@ console.log("B");
 else if(grade>70)
 console.log("C");
 else console.log("D");
-*/
+
 
 
 //using switch
