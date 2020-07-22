@@ -12,7 +12,7 @@ let odd=arr.filter(el=>el%2!=0).map(el=>el**3);
 
 console.log(odd);
 
-
+//
 class user{
     constructor(name,age,email){
         this.name=name;
@@ -59,3 +59,8 @@ let admi=new admin('b',25,'dsp@gmail.com');
 let users=[user1,user2,mod,admi];
 admi.login();
 mod.deleteuser(user1);
+
+
+
+
+//q3 i am not able to attempt, it will really be helpful sir if you could explain this
