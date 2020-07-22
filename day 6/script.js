@@ -8,18 +8,28 @@ function start(){
              setInterval(changeColor, 5000);
   }
   
-  start()
+  
 
 
+  let title=document.getElementById("title");
+  const a= prompt("enter oyur name");
+  document.write( `welcome ${a}`);
 
   let n=prompt("enter multiply tabel");
   for(let i=1;i<=10;i++){
       document.write(n*i + " <br> ");
   }
+ 
+function clock(){
+  let date= new Date();
+  let time=date.toLocaleTimeString();
+  document.write(time);
 
-  var a= prompt("enter oyur name");
-  document.write(` welcome ${a}`);"<br>";
- function dark(){
-var p=document.getElementById("p");
-p.setAttribute('style','backgroundColor:white');
-p.classList.toggle('black');}
+}
+setInterval(clock,1000);
+ 
+ 
+  function dark(){
+
+document.body.setAttribute('style','backgroundColor:white');
+document.body.classList.toggle('black');}
