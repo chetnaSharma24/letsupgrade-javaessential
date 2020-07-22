@@ -24,4 +24,14 @@ console.group('simple');
   console.error('error here'); 
   console.log('vivi vini vici'); 
 console.groupEnd('simple'); 
-console.log('new section'); 
+console.log('new section');
+
+//variables
+const a=10;
+console.log(a);
+
+let b=9;
+console.log(b);
+
+var d=8;
+console.log(d);
